@@ -13,7 +13,6 @@ function mostrar()
 	mensaje= document.getElementById("txtIdNombre").value;
 	document.getElementById("txtIdNombre").value=nombreIngresado;
 
-
 }
 
 //Gonzalo Reynoso

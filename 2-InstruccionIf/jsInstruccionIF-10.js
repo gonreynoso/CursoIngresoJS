@@ -2,6 +2,7 @@
 "EXCELENTE" para notas igual a 9 o 10,
 "APROBÓ" para notas mayores a 4,
 "Vamos, la proxima se puede" para notas menores a 4*/
+//Gonzalo Reynoso
 
 function mostrar()
 {

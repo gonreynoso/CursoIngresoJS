@@ -34,6 +34,7 @@ function mostrar()
 	destinoIngresado=document.getElementById("txtIdDestino").value;
 	estacionDelAñoIngresada=document.getElementById("txtIdEstacion").value;
 	precioBase=15000;
+	porcentaje=0
 	
 	switch(estacionDelAñoIngresada)
 	{
@@ -41,13 +42,14 @@ function mostrar()
 			switch(destinoIngresado)
 			{
 				case "Bariloche":
-					porcentaje=20
+					porcentaje=20;
+				break;
 				case "Cataratas":
-					porcentaje=10
 				case "Cordoba":
-					porcentaje=10
+					porcentaje=-10;
+				break;
 				case "Mar del plata":
-					porcentaje=-20
+					porcentaje=-20;
 				break;
 			} 
 
@@ -55,47 +57,35 @@ function mostrar()
 			switch(destinoIngresado)
 			{
 				case "Bariloche":
-					porcentaje-20
+					porcentaje=-20;
+				break;
 				case "Cataratas":
-					porcentaje=10
 				case "Cordoba":
-					porcentaje=10
+					porcentaje=10;
+				break;
 				case "Mar del plata":
-					porcentaje=20
+					porcentaje=20;
 				break;
 			} 
 
 		case "Otoño":
-			switch(destinoIngresado)
-			{
-				case "Bariloche":
-					porcentaje=10
-				case "Cataratas":
-					porcentaje=10
-				case "Cordoba":
-					porcentaje=0
-				case "Mar del plata":
-					porcentaje=10
-				break;
-			} 
-
 		case "Primavera":
 			switch(destinoIngresado)
 			{
 				case "Bariloche":
-					porcentaje=10
 				case "Cataratas":
-					porcentaje=10
-				case "Cordoba":
-					porcentaje=0
 				case "Mar del plata":
-					porcentaje=10
-				break;	
-			} 	
+					porcentaje=10;
+				break;
+				case "Cordoba":
+					porcentaje=0;
+				break;
+			} 
+			break;
 	}
 	
-	porcentajeCalculado=(precioBase*porcentaje/100)+precioBase;
-	mensaje=porcentajeCalculado;
+	porcentajeCalculado=(precioBase*(porcentaje+100))/100;
+	mensaje="El precio final a pagar es $" + porcentajeCalculado;
 
 	alert(mensaje);
 	

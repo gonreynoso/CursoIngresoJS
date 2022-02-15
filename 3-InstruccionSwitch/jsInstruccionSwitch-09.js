@@ -34,7 +34,7 @@ function mostrar()
 	destinoIngresado=document.getElementById("txtIdDestino").value;
 	estacionDelAñoIngresada=document.getElementById("txtIdEstacion").value;
 	precioBase=15000;
-	porcentaje=0
+	porcentaje=0;
 	
 	switch(estacionDelAñoIngresada)
 	{

@@ -1,4 +1,4 @@
-/* Ejercicio 9
+F/* Ejercicio 9
 una agencia de viajes debe sacar las tarifas de los viajes,
 se cobra $15.000 por cada estadia como base, 
 se pide el ingreso de una estacion del año y 
@@ -29,7 +29,7 @@ function mostrar()
 	let mensaje;
 	let precioBase;
 	let porcentaje;
-	let porcentajeCalculado;
+	let precioFinal;
 
 	destinoIngresado=document.getElementById("txtIdDestino").value;
 	estacionDelAñoIngresada=document.getElementById("txtIdEstacion").value;
@@ -84,8 +84,8 @@ function mostrar()
 			break;
 	}
 	
-	porcentajeCalculado=(precioBase*(porcentaje+100))/100;
-	mensaje="El precio final a pagar es $" + porcentajeCalculado;
+	precioFinal=(precioBase*(porcentaje+100))/100;
+	mensaje="El precio final a pagar es $" + precioFinal;
 
 	alert(mensaje);
 	

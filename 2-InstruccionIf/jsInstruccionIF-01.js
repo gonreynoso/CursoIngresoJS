@@ -2,6 +2,47 @@
 
 function mostrar()
 {
+	let edadIngresada;
+	let mensaje;
+
+	edadIngresada=document.getElementById('txtIdEdad').value;
+	edadIngresada=parseInt(edadIngresada);
+
+	if(edadIngresada==15)
+	{
+		mensaje="Nina bonita";
+	}
+
+
+	alert(mensaje);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+{
 	let edadIngresada
 	
 
@@ -15,4 +56,4 @@ function mostrar()
 
 	
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/

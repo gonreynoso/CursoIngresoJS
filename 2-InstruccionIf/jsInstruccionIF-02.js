@@ -2,6 +2,43 @@
 
 function mostrar()
 {
+	let edadIngresada;
+	let mensaje;
+
+	edadIngresada=document.getElementById('txtIdEdad').value;
+	edadIngresada=parseInt(edadIngresada);
+
+	if(edadIngresada>17)
+	{
+		mensaje='Usted es mayor de edad';
+
+	}
+
+	alert(mensaje);
+}//FIN DE LA FUNCIÓN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 	let edadIngresada
 	
 
@@ -12,7 +49,4 @@ function mostrar()
 	{
 		alert("Usted es mayor de edad");
 	}
-
-	
-
-}//FIN DE LA FUNCIÓN
+*/

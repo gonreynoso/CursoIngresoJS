@@ -34,6 +34,7 @@ function mostrar()
 					mensaje="No se viaja";
 				break;
 			} 
+			break;
 
 		case "Verano":
 			switch(destinoIngresado)
@@ -46,6 +47,7 @@ function mostrar()
 					mensaje="No se viaja";
 				break;
 			} 
+			break;
 
 		case "Otoño":
 			switch(destinoIngresado)
@@ -54,6 +56,7 @@ function mostrar()
 					mensaje="Se viaja";
 				break;
 			} 
+			break;
 
 		case "Primavera":
 			switch(destinoIngresado)

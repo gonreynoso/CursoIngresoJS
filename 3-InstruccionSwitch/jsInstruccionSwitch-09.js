@@ -52,7 +52,8 @@ function mostrar()
 					porcentaje=-20;
 				break;
 			} 
-
+			break;
+			
 		case "Verano":
 			switch(destinoIngresado)
 			{
@@ -67,6 +68,7 @@ function mostrar()
 					porcentaje=20;
 				break;
 			} 
+			break;
 
 		case "Otoño":
 		case "Primavera":

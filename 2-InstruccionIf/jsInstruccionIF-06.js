@@ -15,15 +15,15 @@ function mostrar()
 	{
 		mensaje='Usted es mayor de edad';
 	}
-	if(edadIngresada>12 && edadIngresada<18)
-	{
-		mensaje='Usted es adolescente';		
-	}		
-	else
-	{
-		mensaje='Usted es un niño';
-	}
-
+	else 
+		{
+			if(edadIngresada<13)
+				mensaje='Usted es menor de edad';
+			else
+			{
+				mensaje='Usted es adolescente';
+			}
+		}
 	alert(mensaje);
 
 } //FIN DE LA FUNCIÓN
